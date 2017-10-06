@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0   http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>17.0.0</version>
+	</parent>
+
+	<groupId>net.imagej</groupId>
+	<artifactId>legacy-update-bug-mcve</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>legacy-update-bug-mcve</name>
+	<description>A MCVE to show that legacy ImageWindows are not properly updated.</description>
+	<url>-</url>
+	<inceptionYear>2017</inceptionYear>
+	<organization>
+		<name>Stefan Helfrich</name>
+		<url>https://github.com/stelfrich</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<!-- See https://imagej.net/Team -->
+		<developer>
+			<id>stelfrich</id>
+			<name>Stefan Helfrich</name>
+			<url>https://imagej.net/User:stelfrich</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<contributors>
+		<contributor>
+			<name>Stefan Helfrich</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/stelfrich/legacy-update-bug-mcve</connection>
+		<developerConnection>scm:git:git@github.com:stelfrich/legacy-update-bug-mcve</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/stelfrich/legacy-update-bug-mcve</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/stelfrich/legacy-update-bug-mcve/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>net.imagej</package-name>
+		<main-class>net.imagej.MorphologicalFiltersMain</main-class>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>Stefan Helfrich</license.copyrightOwners>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- ImageJ 1.x - https://github.com/imagej/ImageJA -->
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+		
+		<!-- ImageJ2 -->
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-ops</artifactId>
+		</dependency>
+	</dependencies>
+</project>
